@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "session_id": "a39a4faf-4cce-4da0-b43e-48595366bffa",
+      "session_id": "93d41625-52c6-4e49-bc5b-7adb33b609de",
       "payloads": [
         {
           "messages": [
@@ -10,13 +10,13 @@
               "content": "Hello! Please respond with a short sentence."
             }
           ],
-          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "model": "qwen_qwen3.5-4b-gguf:q4_k_m",
           "stream": true
         }
       ]
     },
     {
-      "session_id": "b26ce4f5-956e-4836-b3d9-ba055a155249",
+      "session_id": "adf66646-6765-470c-8652-0e5a0bc48280",
       "payloads": [
         {
           "messages": [
@@ -25,13 +25,13 @@
               "content": "What is 2 + 2? Reply with one number only."
             }
           ],
-          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "model": "qwen_qwen3.5-4b-gguf:q4_k_m",
           "stream": true
         }
       ]
     },
     {
-      "session_id": "bd8cfa0a-2467-4c59-9de8-4b6e8dcad9b1",
+      "session_id": "93bb6209-b97b-4a61-8452-938784e8fde4",
       "payloads": [
         {
           "messages": [
@@ -40,13 +40,13 @@
               "content": "Write a one-line haiku about GPUs."
             }
           ],
-          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "model": "qwen_qwen3.5-4b-gguf:q4_k_m",
           "stream": true
         }
       ]
     },
     {
-      "session_id": "22713888-5595-4598-ba34-3111e5d93b38",
+      "session_id": "46060786-e81c-4178-8379-e1935639d757",
       "payloads": [
         {
           "messages": [
@@ -55,7 +55,7 @@
               "content": "Return the single word: ready"
             }
           ],
-          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "model": "qwen_qwen3.5-4b-gguf:q4_k_m",
           "stream": true
         }
       ]

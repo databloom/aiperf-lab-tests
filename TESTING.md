@@ -45,6 +45,8 @@ curl -sS --max-time 10 http://192.168.19.9:8080/v1/models
 
 ## Full Commands Used for Benchmarks
 
+All runs below use `--ui-type simple` to force consistent CLI progress formatting and final summary output.
+
 ### 1) Wintermute-only (Qwen3.6 distilled, GGUF q4_1)
 
 ```bash
@@ -54,6 +56,7 @@ curl -sS --max-time 10 http://192.168.19.9:8080/v1/models
   --endpoint-type chat \
   --endpoint /v1/chat/completions \
   --streaming \
+  --ui-type simple \
   --input-file /home/mike/performancetest/aiperf/inputs.jsonl \
   --custom-dataset-type single_turn \
   --request-count 20 \
@@ -70,6 +73,7 @@ curl -sS --max-time 10 http://192.168.19.9:8080/v1/models
   --endpoint-type chat \
   --endpoint /v1/chat/completions \
   --streaming \
+  --ui-type simple \
   --input-file /home/mike/performancetest/aiperf/inputs.jsonl \
   --custom-dataset-type single_turn \
   --request-count 20 \
@@ -86,6 +90,7 @@ curl -sS --max-time 10 http://192.168.19.9:8080/v1/models
   --endpoint-type chat \
   --endpoint /v1/chat/completions \
   --streaming \
+  --ui-type simple \
   --input-file /home/mike/performancetest/aiperf/inputs.jsonl \
   --custom-dataset-type single_turn \
   --request-count 20 \

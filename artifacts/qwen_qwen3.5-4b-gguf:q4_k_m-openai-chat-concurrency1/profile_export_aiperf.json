@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "aiperf_version": "0.8.0",
+  "benchmark_id": "bf089fe4-bdf4-4844-b416-805d15f68747",
+  "error_request_count": {
+    "unit": "requests",
+    "avg": 20.0
+  },
+  "error_isl": {
+    "unit": "tokens",
+    "avg": 9.5,
+    "p1": 6.0,
+    "p5": 6.0,
+    "p10": 6.0,
+    "p25": 8.25,
+    "p50": 9.0,
+    "p75": 10.25,
+    "p90": 14.0,
+    "p95": 14.0,
+    "p99": 14.0,
+    "min": 6.0,
+    "max": 14.0,
+    "std": 2.8722813232690143
+  },
+  "total_error_isl": {
+    "unit": "tokens",
+    "avg": 190.0
+  },
+  "telemetry_data": {
+    "summary": {
+      "endpoints_configured": [],
+      "endpoints_successful": [],
+      "start_time": "2026-04-27T13:04:33.796534",
+      "end_time": "2026-04-27T13:14:55.281540"
+    },
+    "endpoints": {},
+    "error_summary": []
+  },
+  "input_config": {
+    "endpoint": {
+      "model_names": [
+        "qwen_qwen3.5-4b-gguf:q4_k_m"
+      ],
+      "custom_endpoint": "/v1/chat/completions",
+      "type": "chat",
+      "streaming": true,
+      "urls": [
+        "http://192.168.19.9:8080"
+      ],
+      "timeout_seconds": 30.0
+    },
+    "input": {
+      "file": "/home/mike/performancetest/aiperf/inputs.jsonl",
+      "custom_dataset_type": "single_turn"
+    },
+    "tokenizer": {
+      "name": "Qwen/Qwen3-4B",
+      "resolved_names": {
+        "qwen_qwen3.5-4b-gguf:q4_k_m": "Qwen/Qwen3-4B"
+      }
+    },
+    "loadgen": {
+      "concurrency": 1,
+      "arrival_pattern": "concurrency_burst",
+      "request_count": 20
+    },
+    "cli_command": "aiperf profile --model 'qwen_qwen3.5-4b-gguf:q4_k_m' --tokenizer 'Qwen/Qwen3-4B' --endpoint-type 'chat' --endpoint '/v1/chat/completions' --streaming --input-file '/home/mike/performancetest/aiperf/inputs.jsonl' --custom-dataset-type 'single_turn' --request-count 20 --request-timeout-seconds 30 --ui-type 'simple' --url 'http://192.168.19.9:8080'",
+    "benchmark_id": "bf089fe4-bdf4-4844-b416-805d15f68747"
+  },
+  "was_cancelled": false,
+  "error_summary": [
+    {
+      "error_details": {
+        "type": "TimeoutError",
+        "message": "TimeoutError()",
+        "cause": "CancelledError()",
+        "cause_chain": [
+          "TimeoutError",
+          "CancelledError"
+        ]
+      },
+      "count": 20
+    }
+  ],
+  "start_time": "2026-04-27T13:04:33.796534",
+  "end_time": "2026-04-27T13:14:53.278652"
+}

@@ -9,12 +9,12 @@ Benchmark artifacts collected from AIPerf runs against lab inference endpoints.
 
 ## Host Performance Summary
 
-Latest single-host benchmark runs using `aiperf profile --request-count 20 --streaming`:
+Latest single-host benchmark runs using `aiperf profile --request-count 20 --streaming --ui-type simple`:
 
 | Host | Endpoint | Model | Successful Requests | Error Requests | Request Throughput (req/s) | Output Token Throughput (tokens/s) | TTFT Avg (ms) | Request Latency Avg (ms) | Benchmark Duration (s) |
 | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| `wintermute` | `192.168.19.150:8080` | `qwen3-4b-qwen3.6-plus-reasoning-distilled-gguf:q4_1` | 15 | 5 | 0.06 | 13.03 | 430.54 | 7942.62 | 272.34 |
-| `molly` | `192.168.19.9:8080` | `qwen_qwen3.5-4b-gguf:q4_k_m` | 12 | 8 | 1.44 | 15.86 | 306.10 | 650.27 | 8.32 |
+| `wintermute` | `192.168.19.150:8080` | `qwen3-4b-qwen3.6-plus-reasoning-distilled-gguf:q4_1` | 15 | 5 | 0.05 | 13.01 | 417.08 | 7938.06 | 272.82 |
+| `molly` | `192.168.19.9:8080` | `qwen_qwen3.5-4b-gguf:q4_k_m` | 0 | 20 | N/A | N/A | N/A | N/A | N/A |
 
 ## Contents
 

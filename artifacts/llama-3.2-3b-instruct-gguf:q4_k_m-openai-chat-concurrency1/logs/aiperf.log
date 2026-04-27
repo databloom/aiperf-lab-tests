@@ -99,3 +99,74 @@
 2026-04-27 12:22:28.899 - system_controller - INFO - All results received, initiating shutdown
 2026-04-27 12:22:29.509 - ExporterManager - INFO - Exporting all records
 2026-04-27 12:22:29.574 - ExporterManager - INFO - Exporting console data
+2026-04-27 13:19:57.797 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 13:19:57.818 - aiperf.cli_runner - INFO - ✓ Tokenizer gpt2 detected
+2026-04-27 13:19:57.820 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.0s
+2026-04-27 13:19:58.279 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 13:19:58.378 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 13:19:58.408 - server_metrics_manager - INFO - Server Metrics: Discovered 2 endpoints: ['http://192.168.19.150:8080/metrics', 'http://192.168.19.9:8080/metrics']
+2026-04-27 13:19:58.470 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 13:19:58.496 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 13:19:58.655 - GPUTelemetryJSONLWriter_71962c3d - INFO - GPU telemetry export enabled: artifacts/llama-3.2-3b-instruct-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 13:19:58.761 - RecordExportResultsProcessor_c6c9ea18 - INFO - Record metrics export enabled: artifacts/llama-3.2-3b-instruct-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 13:19:59.064 - system_controller - INFO - Registered Record Processor (id: 'record_processor_d4655178')
+2026-04-27 13:19:59.274 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 13:19:59.347 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 13:19:59.423 - system_controller - INFO - Registered Worker (id: 'worker_1927ea80')
+2026-04-27 13:19:59.620 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 13:19:59.620 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 13:19:59.623 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 13:19:59.625 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 13:19:59.635 - InferenceResultParser_c3d4c659 - INFO - Configuring tokenizers for inference result parser
+2026-04-27 13:19:59.661 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 13:19:59.667 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 13:20:05.248 - dataset_manager - INFO - Tokenizer(s) configured in 5.62 seconds
+2026-04-27 13:20:05.248 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 13:20:05.285 - InferenceResultParser_c3d4c659 - INFO - Initialized tokenizers: {'llama-3.2-3b-instruct-gguf:q4_k_m': {'class': 'GPT2Tokenizer', 'name_or_path': 'gpt2'}} in 5.65 seconds
+2026-04-27 13:20:11.398 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 13:20:11.420 - MemoryMapDatasetBackingStore_315d3ae1 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_6472b3d2-f6f1-4982-ad83-4578aa113cfa/dataset.dat)
+2026-04-27 13:20:11.423 - MemoryMapDatasetBackingStore_315d3ae1 - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 13:20:11.424 - MemoryMapDatasetBackingStore_315d3ae1 - INFO - Index file created: /tmp/aiperf_mmap_6472b3d2-f6f1-4982-ad83-4578aa113cfa/index.dat
+2026-04-27 13:20:11.425 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_6472b3d2-f6f1-4982-ad83-4578aa113cfa/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_6472b3d2-f6f1-4982-ad83-4578aa113cfa/index.dat') conversation_count=4 total_size_bytes=1549 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 13:20:11.426 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 13:20:11.435 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/llama-3.2-3b-instruct-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 13:20:11.444 - dataset_manager - INFO - inputs.json file generated in 0.01 seconds
+2026-04-27 13:20:11.449 - PhaseOrchestrator_de38451f - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 13:20:11.614 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 13:20:11.614 - dataset_manager - INFO - Dataset configured in 6.37 seconds
+2026-04-27 13:20:11.616 - system_controller - INFO - All services configured in 12.00 seconds
+2026-04-27 13:20:11.617 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 13:20:11.628 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 13:20:11.628 - PhaseRunner - NOTICE - Phase profiling started | target: 20 requests
+2026-04-27 13:20:11.634 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 13:20:11.653 - system_controller - INFO - All services started profiling successfully
+2026-04-27 13:20:11.654 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 13:20:34.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:20:55.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:21:16.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:21:37.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:21:58.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:22:01.869 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 25.82ms
+2026-04-27 13:22:11.917 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 33.41ms
+2026-04-27 13:22:19.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:22:21.711 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 31.62ms
+2026-04-27 13:22:40.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:23:01.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:23:22.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:23:22.899 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=20, completed=19, in_flight=1 | sessions: sent=20, completed=19
+2026-04-27 13:23:22.900 - records_manager - INFO - Sent 20 requests. Waiting for all to complete...
+2026-04-27 13:23:43.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:23:43.278 - PhaseRunner - NOTICE - Phase profiling complete | completed=20, cancelled=0, errors=0 | sessions: completed=20, cancelled=0 | elapsed=211.65s
+2026-04-27 13:23:43.279 - PhaseOrchestrator_de38451f - NOTICE - All credits completed
+2026-04-27 13:23:43.281 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777310411628779827, sent_end_ns=1777310602899055327, requests_end_ns=1777310623278703750, total_expected_requests=20, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=20, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=10, error_records=9)
+2026-04-27 13:23:43.282 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 19 of 20 records processed)...
+2026-04-27 13:23:43.284 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 13:23:43.285 - records_manager - INFO - Processed 10 valid requests and 10 errors (20 total).
+2026-04-27 13:23:43.285 - records_manager - INFO - Received all records, processing now...
+2026-04-27 13:23:43.284 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 13:23:43.295 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 13:23:45.279 - records_manager - INFO - Processing records results...
+2026-04-27 13:23:45.295 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 13:23:45.296 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 13:23:45.912 - ExporterManager - INFO - Exporting all records
+2026-04-27 13:23:45.996 - ExporterManager - INFO - Exporting console data

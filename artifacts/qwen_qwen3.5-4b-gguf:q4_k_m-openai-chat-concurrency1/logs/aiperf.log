@@ -1,0 +1,524 @@
+2026-04-27 11:42:51.064 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 11:42:51.428 - aiperf.cli_runner - INFO - ✓ Tokenizer qwen_qwen3.5-4b-gguf:q4_k_m detected
+2026-04-27 11:42:51.429 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.4s
+2026-04-27 11:42:51.471 - aiperf - WARNING - Using --osl without ignore_eos or min_tokens in --extra-inputs. Output sequence length cannot be guaranteed unless the server honors these parameters. Consider: --extra-inputs ignore_eos:true (generate until max_tokens) or --extra-inputs min_tokens:<value> (set minimum output length).
+2026-04-27 11:42:51.589 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 11:42:51.754 - server_metrics_manager - INFO - Server Metrics: Discovered 2 endpoints: ['http://192.168.19.150:8080/metrics', 'http://192.168.19.9:8080/metrics']
+2026-04-27 11:42:51.789 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 11:42:51.832 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 11:42:51.902 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 11:42:52.101 - GPUTelemetryJSONLWriter_7b514ebc - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 11:42:52.118 - RecordExportResultsProcessor_85f0a326 - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 11:42:52.214 - system_controller - INFO - Registered Record Processor (id: 'record_processor_02ab6efb')
+2026-04-27 11:42:52.448 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 11:42:52.559 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 11:42:52.580 - system_controller - INFO - Registered Worker (id: 'worker_e86fa7c7')
+2026-04-27 11:42:53.028 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 11:42:53.028 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 11:42:53.030 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 11:42:53.035 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 11:42:53.035 - InferenceResultParser_734bdb63 - INFO - Configuring tokenizers for inference result parser
+2026-04-27 11:42:53.055 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 11:42:54.648 - dataset_manager - ERROR - Failed to handle command profile_configure with hook @on_command 🡒 DatasetManager._profile_configure_command: Failed to load tokenizer 'qwen_qwen3.5-4b-gguf:q4_k_m'
+2026-04-27 11:42:54.650 - system_controller - ERROR - Error running Hook(func=<bound method SystemController._start_services of <SystemController system_controller (state=starting)>>, params=None) hook for SystemController: Failed to perform operation 'Configure Profiling'
+2026-04-27 11:42:54.650 - system_controller - ERROR - Failed for SystemController (id=system_controller): SystemController._start_services: Failed to perform operation 'Configure Profiling'
+2026-04-27 11:43:06.369 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 11:43:06.631 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 11:43:06.676 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 11:43:06.706 - server_metrics_manager - INFO - Server Metrics: Discovered 2 endpoints: ['http://192.168.19.150:8080/metrics', 'http://192.168.19.9:8080/metrics']
+2026-04-27 11:43:06.771 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 11:43:06.768 - GPUTelemetryJSONLWriter_22b415f7 - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 11:43:06.794 - RecordExportResultsProcessor_e8263c9e - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 11:43:06.818 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 11:43:06.988 - system_controller - INFO - Registered Record Processor (id: 'record_processor_d01f7739')
+2026-04-27 11:43:07.091 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 11:43:07.224 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 11:43:07.382 - system_controller - INFO - Registered Worker (id: 'worker_f7c0fd21')
+2026-04-27 11:43:07.534 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 11:43:07.534 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 11:43:07.537 - InferenceResultParser_878831c8 - INFO - Tokenization is disabled for this endpoint, skipping tokenizer configuration
+2026-04-27 11:43:07.542 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 11:43:07.544 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 11:43:07.576 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 11:43:09.547 - dataset_manager - ERROR - Failed to handle command profile_configure with hook @on_command 🡒 DatasetManager._profile_configure_command: Failed to load tokenizer 'qwen_qwen3.5-4b-gguf:q4_k_m'
+2026-04-27 11:43:09.549 - system_controller - ERROR - Error running Hook(func=<bound method SystemController._start_services of <SystemController system_controller (state=starting)>>, params=None) hook for SystemController: Failed to perform operation 'Configure Profiling'
+2026-04-27 11:43:09.549 - system_controller - ERROR - Failed for SystemController (id=system_controller): SystemController._start_services: Failed to perform operation 'Configure Profiling'
+2026-04-27 11:43:17.872 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 11:43:18.375 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B "HTTP/1.1 200 OK"
+2026-04-27 11:43:18.385 - aiperf.cli_runner - INFO - ✓ Tokenizer Qwen/Qwen3-4B detected
+2026-04-27 11:43:18.386 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.5s
+2026-04-27 11:43:18.734 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 11:43:19.097 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 11:43:19.106 - server_metrics_manager - INFO - Server Metrics: Discovered 2 endpoints: ['http://192.168.19.150:8080/metrics', 'http://192.168.19.9:8080/metrics']
+2026-04-27 11:43:19.148 - GPUTelemetryJSONLWriter_0648f015 - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 11:43:19.169 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 11:43:19.177 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 11:43:19.183 - RecordExportResultsProcessor_f26165fe - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 11:43:19.342 - system_controller - INFO - Registered Record Processor (id: 'record_processor_9784f96c')
+2026-04-27 11:43:19.689 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 11:43:20.025 - system_controller - INFO - Registered Worker (id: 'worker_51782663')
+2026-04-27 11:43:20.052 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 11:43:20.088 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 11:43:20.088 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 11:43:20.092 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 11:43:20.093 - InferenceResultParser_ab749e6a - INFO - Configuring tokenizers for inference result parser
+2026-04-27 11:43:20.100 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 11:43:20.141 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 11:43:22.580 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:22.588 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/config.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.623 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:22.625 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-27 11:43:22.636 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/config.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.682 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/config.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.732 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:22.733 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-27 11:43:22.743 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.749 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:22.755 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.763 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.814 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:22.814 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:22.859 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.859 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.898 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:22.902 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/vocab.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:22.910 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/vocab.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.915 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/vocab.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:22.920 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/vocab.json "HTTP/1.1 200 OK"
+2026-04-27 11:43:23.047 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:23.055 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/merges.txt "HTTP/1.1 200 OK"
+2026-04-27 11:43:23.061 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/merges.txt "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 11:43:23.065 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/merges.txt "HTTP/1.1 200 OK"
+2026-04-27 11:43:23.072 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qwen/Qwen3-4B/1cfa9a7208912126459214e8b04321603b3df60c/merges.txt "HTTP/1.1 200 OK"
+2026-04-27 11:43:23.139 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+2026-04-27 11:43:23.160 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 11:43:23.163 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/tokenizer.json "HTTP/1.1 302 Found"
+2026-04-27 11:43:23.188 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B/xet-read-token/1cfa9a7208912126459214e8b04321603b3df60c "HTTP/1.1 200 OK"
+2026-04-27 11:43:24.096 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:24.119 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:24.134 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:24.163 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:24.205 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:24.211 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/Qwen/Qwen3-4B/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-04-27 11:43:25.663 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B "HTTP/1.1 200 OK"
+2026-04-27 11:43:25.667 - dataset_manager - INFO - Tokenizer(s) configured in 5.57 seconds
+2026-04-27 11:43:25.667 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 11:43:25.731 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-4B "HTTP/1.1 200 OK"
+2026-04-27 11:43:25.736 - InferenceResultParser_ab749e6a - INFO - Initialized tokenizers: {'qwen_qwen3.5-4b-gguf:q4_k_m': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-4B'}} in 5.64 seconds
+2026-04-27 11:43:29.473 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 11:43:29.493 - MemoryMapDatasetBackingStore_9f6ce616 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_4f94a6b0-28c0-4293-acee-ab505752dd8b/dataset.dat)
+2026-04-27 11:43:29.495 - MemoryMapDatasetBackingStore_9f6ce616 - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 11:43:29.496 - MemoryMapDatasetBackingStore_9f6ce616 - INFO - Index file created: /tmp/aiperf_mmap_4f94a6b0-28c0-4293-acee-ab505752dd8b/index.dat
+2026-04-27 11:43:29.496 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_4f94a6b0-28c0-4293-acee-ab505752dd8b/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_4f94a6b0-28c0-4293-acee-ab505752dd8b/index.dat') conversation_count=4 total_size_bytes=1525 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 11:43:29.496 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 11:43:29.497 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 11:43:29.499 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-04-27 11:43:29.524 - PhaseOrchestrator_a125eadc - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 11:43:29.669 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 11:43:29.669 - dataset_manager - INFO - Dataset configured in 4.00 seconds
+2026-04-27 11:43:29.670 - system_controller - INFO - All services configured in 9.58 seconds
+2026-04-27 11:43:29.670 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 11:43:29.678 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 11:43:29.679 - PhaseRunner - NOTICE - Phase profiling started | target: 10 requests
+2026-04-27 11:43:29.680 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 11:43:29.682 - system_controller - INFO - All services started profiling successfully
+2026-04-27 11:43:29.682 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 11:43:32.790 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 11:43:35.856 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 11:43:38.928 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 11:43:42.000 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 11:43:45.076 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 11:43:45.079 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=10, completed=9, in_flight=1 | sessions: sent=10, completed=9
+2026-04-27 11:43:45.081 - records_manager - INFO - Sent 10 requests. Waiting for all to complete...
+2026-04-27 11:43:45.501 - PhaseRunner - NOTICE - Phase profiling complete | completed=10, cancelled=0, errors=0 | sessions: completed=10, cancelled=0 | elapsed=15.82s
+2026-04-27 11:43:45.502 - PhaseOrchestrator_a125eadc - NOTICE - All credits completed
+2026-04-27 11:43:45.503 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777304609678954451, sent_end_ns=1777304625079650721, requests_end_ns=1777304625501663721, total_expected_requests=10, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=10, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=4, error_records=5)
+2026-04-27 11:43:45.503 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 9 of 10 records processed)...
+2026-04-27 11:43:45.504 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 11:43:45.505 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 11:43:45.510 - records_manager - INFO - Processed 5 valid requests and 5 errors (10 total).
+2026-04-27 11:43:45.511 - records_manager - INFO - Received all records, processing now...
+2026-04-27 11:43:45.523 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 11:43:47.502 - records_manager - INFO - Processing records results...
+2026-04-27 11:43:47.519 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 11:43:47.520 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 11:43:48.126 - ExporterManager - INFO - Exporting all records
+2026-04-27 11:43:48.205 - ExporterManager - INFO - Exporting console data
+2026-04-27 12:00:23.009 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 12:00:23.017 - aiperf.cli_runner - INFO - ✓ Tokenizer Qwen/Qwen3-4B detected
+2026-04-27 12:00:23.017 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.0s
+2026-04-27 12:00:23.287 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 12:00:23.291 - server_metrics_manager - INFO - Server Metrics: Discovered 2 endpoints: ['http://192.168.19.150:8080/metrics', 'http://192.168.19.9:8080/metrics']
+2026-04-27 12:00:23.366 - GPUTelemetryJSONLWriter_95e2d5a8 - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 12:00:23.370 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 12:00:23.379 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 12:00:23.392 - RecordExportResultsProcessor_b35ebf56 - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 12:00:23.411 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 12:00:23.624 - system_controller - INFO - Registered Record Processor (id: 'record_processor_9efbd9fd')
+2026-04-27 12:00:23.736 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 12:00:23.797 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 12:00:23.880 - system_controller - INFO - Registered Worker (id: 'worker_23a9d3f4')
+2026-04-27 12:00:24.162 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 12:00:24.162 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 12:00:24.165 - InferenceResultParser_e103528d - INFO - Configuring tokenizers for inference result parser
+2026-04-27 12:00:24.166 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 12:00:24.167 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 12:00:24.207 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 12:00:27.266 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 12:00:27.339 - dataset_manager - INFO - Tokenizer(s) configured in 3.17 seconds
+2026-04-27 12:00:27.339 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 12:00:27.507 - InferenceResultParser_e103528d - INFO - Initialized tokenizers: {'qwen_qwen3.5-4b-gguf:q4_k_m': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-4B'}} in 3.34 seconds
+2026-04-27 12:00:31.425 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 12:00:31.448 - MemoryMapDatasetBackingStore_cea7c6a5 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_8dedb31a-f4f5-4216-98b3-f85afe1848a8/dataset.dat)
+2026-04-27 12:00:31.450 - MemoryMapDatasetBackingStore_cea7c6a5 - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 12:00:31.452 - MemoryMapDatasetBackingStore_cea7c6a5 - INFO - Index file created: /tmp/aiperf_mmap_8dedb31a-f4f5-4216-98b3-f85afe1848a8/index.dat
+2026-04-27 12:00:31.453 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_8dedb31a-f4f5-4216-98b3-f85afe1848a8/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_8dedb31a-f4f5-4216-98b3-f85afe1848a8/index.dat') conversation_count=4 total_size_bytes=1525 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 12:00:31.458 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 12:00:31.472 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 12:00:31.499 - dataset_manager - INFO - inputs.json file generated in 0.03 seconds
+2026-04-27 12:00:31.501 - PhaseOrchestrator_afa1056c - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 12:00:31.784 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 12:00:31.789 - dataset_manager - INFO - Dataset configured in 4.45 seconds
+2026-04-27 12:00:31.797 - system_controller - INFO - All services configured in 7.63 seconds
+2026-04-27 12:00:31.797 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 12:00:31.814 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 12:00:31.814 - PhaseRunner - NOTICE - Phase profiling started | target: 20 requests
+2026-04-27 12:00:31.819 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 12:00:31.895 - system_controller - INFO - All services started profiling successfully
+2026-04-27 12:00:31.895 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 12:00:34.960 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:38.032 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:41.104 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:41.830 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 30.16ms
+2026-04-27 12:00:44.176 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:47.248 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:50.320 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:53.392 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:56.464 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:00:59.536 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:01:02.608 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.150', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), OSError(113, "Connect call failed ('192.168.19.150', 8080)"))
+2026-04-27 12:01:02.610 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=20, completed=19, in_flight=1 | sessions: sent=20, completed=19
+2026-04-27 12:01:02.611 - records_manager - INFO - Sent 20 requests. Waiting for all to complete...
+2026-04-27 12:01:03.027 - PhaseRunner - NOTICE - Phase profiling complete | completed=20, cancelled=0, errors=0 | sessions: completed=20, cancelled=0 | elapsed=31.21s
+2026-04-27 12:01:03.029 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777305631814853268, sent_end_ns=1777305662610563798, requests_end_ns=1777305663027749697, total_expected_requests=20, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=20, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=9, error_records=10)
+2026-04-27 12:01:03.029 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 19 of 20 records processed)...
+2026-04-27 12:01:03.030 - PhaseOrchestrator_afa1056c - NOTICE - All credits completed
+2026-04-27 12:01:03.032 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 12:01:03.033 - records_manager - INFO - Processed 10 valid requests and 10 errors (20 total).
+2026-04-27 12:01:03.033 - records_manager - INFO - Received all records, processing now...
+2026-04-27 12:01:03.033 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 12:01:03.039 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 12:01:05.029 - records_manager - INFO - Processing records results...
+2026-04-27 12:01:05.046 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 12:01:05.047 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 12:01:05.652 - ExporterManager - INFO - Exporting all records
+2026-04-27 12:01:05.714 - ExporterManager - INFO - Exporting console data
+2026-04-27 12:10:13.497 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 12:10:13.507 - aiperf.cli_runner - INFO - ✓ Tokenizer Qwen/Qwen3-4B detected
+2026-04-27 12:10:13.508 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.0s
+2026-04-27 12:10:13.750 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 12:10:14.028 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://192.168.19.9:8080/metrics']
+2026-04-27 12:10:14.066 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 12:10:14.077 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 12:10:14.081 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 12:10:14.111 - GPUTelemetryJSONLWriter_5554ae60 - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 12:10:14.132 - RecordExportResultsProcessor_cb407a7b - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 12:10:14.427 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 12:10:14.467 - system_controller - INFO - Registered Record Processor (id: 'record_processor_5dbf1605')
+2026-04-27 12:10:14.758 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 12:10:14.877 - system_controller - INFO - Registered Worker (id: 'worker_eb3d7076')
+2026-04-27 12:10:15.175 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 12:10:15.175 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 12:10:15.180 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 12:10:15.189 - InferenceResultParser_8535a86a - INFO - Configuring tokenizers for inference result parser
+2026-04-27 12:10:15.181 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 12:10:15.232 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 12:10:15.249 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 12:10:22.475 - dataset_manager - INFO - Tokenizer(s) configured in 7.29 seconds
+2026-04-27 12:10:22.475 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 12:10:22.748 - InferenceResultParser_8535a86a - INFO - Initialized tokenizers: {'qwen_qwen3.5-4b-gguf:q4_k_m': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-4B'}} in 7.56 seconds
+2026-04-27 12:10:31.002 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 12:10:31.100 - MemoryMapDatasetBackingStore_eb70a739 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_6ad7fdb6-383b-4902-8e58-f753e4072301/dataset.dat)
+2026-04-27 12:10:31.104 - MemoryMapDatasetBackingStore_eb70a739 - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 12:10:31.113 - MemoryMapDatasetBackingStore_eb70a739 - INFO - Index file created: /tmp/aiperf_mmap_6ad7fdb6-383b-4902-8e58-f753e4072301/index.dat
+2026-04-27 12:10:31.113 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_6ad7fdb6-383b-4902-8e58-f753e4072301/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_6ad7fdb6-383b-4902-8e58-f753e4072301/index.dat') conversation_count=4 total_size_bytes=1525 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 12:10:31.113 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 12:10:31.114 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 12:10:31.117 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-04-27 12:10:31.159 - PhaseOrchestrator_e9689a28 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 12:10:31.415 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 12:10:31.416 - dataset_manager - INFO - Dataset configured in 8.94 seconds
+2026-04-27 12:10:31.425 - system_controller - INFO - All services configured in 16.25 seconds
+2026-04-27 12:10:31.425 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 12:10:31.437 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 12:10:31.437 - PhaseRunner - NOTICE - Phase profiling started | target: 20 requests
+2026-04-27 12:10:31.438 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 12:10:31.448 - system_controller - INFO - All services started profiling successfully
+2026-04-27 12:10:31.448 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 12:12:11.756 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 29.04ms
+2026-04-27 12:13:31.708 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 27.14ms
+2026-04-27 12:14:01.804 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 37.79ms
+2026-04-27 12:14:11.852 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 37.13ms
+2026-04-27 12:16:36.877 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 25.39ms
+2026-04-27 12:16:39.825 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 12:16:39.843 - aiperf.cli_runner - INFO - ✓ Tokenizer Qwen/Qwen3-4B detected
+2026-04-27 12:16:39.843 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.0s
+2026-04-27 12:16:40.147 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 12:16:40.177 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://192.168.19.9:8080/metrics']
+2026-04-27 12:16:40.221 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 12:16:40.238 - GPUTelemetryJSONLWriter_170d03f8 - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 12:16:40.266 - RecordExportResultsProcessor_4763a5d2 - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 12:16:40.300 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 12:16:40.314 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 12:16:40.507 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 12:16:40.609 - system_controller - INFO - Registered Record Processor (id: 'record_processor_9521d28c')
+2026-04-27 12:16:40.729 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 12:16:40.867 - system_controller - INFO - Registered Worker (id: 'worker_8b742735')
+2026-04-27 12:16:41.034 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 12:16:41.034 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 12:16:41.038 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 12:16:41.045 - InferenceResultParser_201440bc - INFO - Configuring tokenizers for inference result parser
+2026-04-27 12:16:41.046 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 12:16:41.072 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 12:16:41.081 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 12:16:47.699 - InferenceResultParser_201440bc - INFO - Initialized tokenizers: {'qwen_qwen3.5-4b-gguf:q4_k_m': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-4B'}} in 6.65 seconds
+2026-04-27 12:16:47.771 - dataset_manager - INFO - Tokenizer(s) configured in 6.73 seconds
+2026-04-27 12:16:47.771 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 12:16:54.394 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 12:16:54.423 - MemoryMapDatasetBackingStore_34acad5c - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_25c36fad-5902-4171-bea9-58f967ead208/dataset.dat)
+2026-04-27 12:16:54.429 - MemoryMapDatasetBackingStore_34acad5c - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 12:16:54.431 - MemoryMapDatasetBackingStore_34acad5c - INFO - Index file created: /tmp/aiperf_mmap_25c36fad-5902-4171-bea9-58f967ead208/index.dat
+2026-04-27 12:16:54.432 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_25c36fad-5902-4171-bea9-58f967ead208/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_25c36fad-5902-4171-bea9-58f967ead208/index.dat') conversation_count=4 total_size_bytes=1525 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 12:16:54.433 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 12:16:54.462 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 12:16:54.475 - dataset_manager - INFO - inputs.json file generated in 0.01 seconds
+2026-04-27 12:16:54.484 - PhaseOrchestrator_827ac365 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 12:16:54.685 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 12:16:54.686 - dataset_manager - INFO - Dataset configured in 6.91 seconds
+2026-04-27 12:16:54.688 - system_controller - INFO - All services configured in 13.65 seconds
+2026-04-27 12:16:54.688 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 12:16:54.704 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 12:16:54.707 - PhaseRunner - NOTICE - Phase profiling started | target: 8 requests
+2026-04-27 12:16:54.708 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 12:16:54.718 - system_controller - INFO - All services started profiling successfully
+2026-04-27 12:16:54.718 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 12:17:01.996 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 28.92ms
+2026-04-27 12:17:07.280 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 34.16ms
+2026-04-27 12:17:11.874 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 72.51ms
+2026-04-27 12:17:15.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:17:36.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:17:57.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:18:18.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:18:39.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:18:51.792 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 35.09ms
+2026-04-27 12:19:00.281 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:19:21.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:19:21.282 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=8, completed=7, in_flight=1 | sessions: sent=8, completed=7
+2026-04-27 12:19:21.283 - records_manager - INFO - Sent 8 requests. Waiting for all to complete...
+2026-04-27 12:19:31.732 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 28.08ms
+2026-04-27 12:19:42.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:19:42.279 - PhaseRunner - NOTICE - Phase profiling complete | completed=8, cancelled=0, errors=0 | sessions: completed=8, cancelled=0 | elapsed=167.57s
+2026-04-27 12:19:42.281 - PhaseOrchestrator_827ac365 - NOTICE - All credits completed
+2026-04-27 12:19:42.283 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 12:19:42.284 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777306614706904760, sent_end_ns=1777306761282366330, requests_end_ns=1777306782278884074, total_expected_requests=8, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=8, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=0, error_records=7)
+2026-04-27 12:19:42.285 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 7 of 8 records processed)...
+2026-04-27 12:19:42.287 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 12:19:42.294 - records_manager - INFO - Processed 0 valid requests and 8 errors (8 total).
+2026-04-27 12:19:42.295 - records_manager - INFO - Received all records, processing now...
+2026-04-27 12:19:42.309 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 12:19:44.279 - records_manager - INFO - Processing records results...
+2026-04-27 12:19:44.282 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 12:19:44.341 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 12:19:44.890 - ExporterManager - INFO - Exporting all records
+2026-04-27 12:19:44.996 - ExporterManager - INFO - Exporting console data
+2026-04-27 12:20:41.839 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 25.07ms
+2026-04-27 12:21:21.920 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 31.09ms
+2026-04-27 12:22:04.304 - AioHttpClient - ERROR - Error in aiohttp request: ClientPayloadError("Response payload is not completed: <TransferEncodingError: 400, message='Not enough data to satisfy transfer length header.'>")
+2026-04-27 12:22:04.313 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.319 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.326 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.333 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.341 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.347 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.360 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.366 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.385 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.392 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.408 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.423 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.431 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.449 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.456 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.479 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.486 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=20, completed=19, in_flight=1 | sessions: sent=20, completed=19
+2026-04-27 12:22:04.497 - records_manager - INFO - Sent 20 requests. Waiting for all to complete...
+2026-04-27 12:22:04.500 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:04.502 - PhaseRunner - NOTICE - Phase profiling complete | completed=20, cancelled=0, errors=0 | sessions: completed=20, cancelled=0 | elapsed=693.06s
+2026-04-27 12:22:04.503 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777306231437534714, sent_end_ns=1777306924486464441, requests_end_ns=1777306924501942693, total_expected_requests=20, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=20, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=2, error_records=17)
+2026-04-27 12:22:04.503 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 19 of 20 records processed)...
+2026-04-27 12:22:04.503 - PhaseOrchestrator_e9689a28 - NOTICE - All credits completed
+2026-04-27 12:22:04.505 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 12:22:04.505 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 12:22:04.507 - records_manager - INFO - Processed 2 valid requests and 18 errors (20 total).
+2026-04-27 12:22:04.507 - records_manager - INFO - Received all records, processing now...
+2026-04-27 12:22:04.525 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 12:22:06.503 - records_manager - INFO - Processing records results...
+2026-04-27 12:22:06.520 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 12:22:06.522 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 12:22:07.126 - ExporterManager - INFO - Exporting all records
+2026-04-27 12:22:07.190 - ExporterManager - INFO - Exporting console data
+2026-04-27 12:42:05.806 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 12:42:05.814 - aiperf.cli_runner - INFO - ✓ Tokenizer Qwen/Qwen3-4B detected
+2026-04-27 12:42:05.815 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.0s
+2026-04-27 12:42:06.049 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://192.168.19.9:8080/metrics']
+2026-04-27 12:42:06.093 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 12:42:06.137 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 12:42:06.158 - GPUTelemetryJSONLWriter_48e80552 - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 12:42:06.163 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 12:42:06.178 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 12:42:06.184 - RecordExportResultsProcessor_82a9771b - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 12:42:06.423 - system_controller - INFO - Registered Record Processor (id: 'record_processor_5356f857')
+2026-04-27 12:42:06.428 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 12:42:06.476 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 12:42:06.574 - system_controller - INFO - Registered Worker (id: 'worker_76d65619')
+2026-04-27 12:42:06.961 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 12:42:06.961 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 12:42:06.963 - InferenceResultParser_d6a0da7f - INFO - Configuring tokenizers for inference result parser
+2026-04-27 12:42:06.964 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 12:42:06.977 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 12:42:06.994 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 12:42:07.045 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 12:42:10.813 - dataset_manager - INFO - Tokenizer(s) configured in 3.85 seconds
+2026-04-27 12:42:10.813 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 12:42:11.067 - InferenceResultParser_d6a0da7f - INFO - Initialized tokenizers: {'qwen_qwen3.5-4b-gguf:q4_k_m': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-4B'}} in 4.10 seconds
+2026-04-27 12:42:15.832 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 12:42:15.852 - MemoryMapDatasetBackingStore_74718a3f - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_f2bef04c-978d-444c-b1a2-c99d3c0cb860/dataset.dat)
+2026-04-27 12:42:15.854 - MemoryMapDatasetBackingStore_74718a3f - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 12:42:15.855 - MemoryMapDatasetBackingStore_74718a3f - INFO - Index file created: /tmp/aiperf_mmap_f2bef04c-978d-444c-b1a2-c99d3c0cb860/index.dat
+2026-04-27 12:42:15.855 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_f2bef04c-978d-444c-b1a2-c99d3c0cb860/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_f2bef04c-978d-444c-b1a2-c99d3c0cb860/index.dat') conversation_count=4 total_size_bytes=1525 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 12:42:15.855 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 12:42:15.856 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 12:42:15.870 - dataset_manager - INFO - inputs.json file generated in 0.01 seconds
+2026-04-27 12:42:15.877 - PhaseOrchestrator_def39bf9 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 12:42:16.076 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 12:42:16.076 - dataset_manager - INFO - Dataset configured in 5.26 seconds
+2026-04-27 12:42:16.078 - system_controller - INFO - All services configured in 9.12 seconds
+2026-04-27 12:42:16.078 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 12:42:16.094 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 12:42:16.095 - PhaseRunner - NOTICE - Phase profiling started | target: 20 requests
+2026-04-27 12:42:16.101 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 12:42:16.116 - system_controller - INFO - All services started profiling successfully
+2026-04-27 12:42:16.116 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 12:42:23.677 - EventLoopMonitor - WARNING - Event loop for worker_76d65619 is taking too long to run. Overhead: 27.42ms
+2026-04-27 12:42:31.924 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 72.13ms
+2026-04-27 12:42:55.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:43:26.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:43:57.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:44:28.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:44:59.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:45:22.038 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 27.55ms
+2026-04-27 12:45:30.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:46:01.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:46:01.284 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=20, completed=19, in_flight=1 | sessions: sent=20, completed=19
+2026-04-27 12:46:01.286 - records_manager - INFO - Sent 20 requests. Waiting for all to complete...
+2026-04-27 12:46:32.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 12:46:32.278 - PhaseRunner - NOTICE - Phase profiling complete | completed=20, cancelled=0, errors=0 | sessions: completed=20, cancelled=0 | elapsed=256.18s
+2026-04-27 12:46:32.281 - PhaseOrchestrator_def39bf9 - NOTICE - All credits completed
+2026-04-27 12:46:32.282 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 12:46:32.283 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777308136094896422, sent_end_ns=1777308361284533788, requests_end_ns=1777308392278742514, total_expected_requests=20, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=20, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=12, error_records=8)
+2026-04-27 12:46:32.283 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 20 of 20 records processed)...
+2026-04-27 12:46:32.283 - records_manager - INFO - Processed 12 valid requests and 8 errors (20 total).
+2026-04-27 12:46:32.283 - records_manager - INFO - Received all records, processing now...
+2026-04-27 12:46:32.283 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 12:46:32.294 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 12:46:34.280 - records_manager - INFO - Processing records results...
+2026-04-27 12:46:34.325 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 12:46:34.327 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 12:46:34.935 - ExporterManager - INFO - Exporting all records
+2026-04-27 12:46:35.081 - ExporterManager - INFO - Exporting console data
+2026-04-27 13:04:24.008 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 13:04:24.019 - aiperf.cli_runner - INFO - ✓ Tokenizer Qwen/Qwen3-4B detected
+2026-04-27 13:04:24.020 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.0s
+2026-04-27 13:04:24.392 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 13:04:24.476 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 13:04:24.549 - server_metrics_manager - INFO - Server Metrics: Discovered 1 endpoints: ['http://192.168.19.9:8080/metrics']
+2026-04-27 13:04:24.584 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 13:04:24.591 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 13:04:24.639 - GPUTelemetryJSONLWriter_f8a22be8 - INFO - GPU telemetry export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 13:04:24.663 - RecordExportResultsProcessor_4bc517d7 - INFO - Record metrics export enabled: artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 13:04:24.727 - system_controller - INFO - Registered Record Processor (id: 'record_processor_14ac6ca8')
+2026-04-27 13:04:24.865 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 13:04:25.008 - system_controller - INFO - Registered Worker (id: 'worker_dc9301cd')
+2026-04-27 13:04:25.027 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 13:04:25.219 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 13:04:25.219 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 13:04:25.221 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 13:04:25.224 - InferenceResultParser_7d369a9a - INFO - Configuring tokenizers for inference result parser
+2026-04-27 13:04:25.230 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 13:04:25.237 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 13:04:25.240 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 13:04:29.218 - dataset_manager - INFO - Tokenizer(s) configured in 4.00 seconds
+2026-04-27 13:04:29.219 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 13:04:29.587 - InferenceResultParser_7d369a9a - INFO - Initialized tokenizers: {'qwen_qwen3.5-4b-gguf:q4_k_m': {'class': 'Qwen2Tokenizer', 'name_or_path': 'Qwen/Qwen3-4B'}} in 4.36 seconds
+2026-04-27 13:04:33.603 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 13:04:33.624 - MemoryMapDatasetBackingStore_4ec24521 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_bf089fe4-bdf4-4844-b416-805d15f68747/dataset.dat)
+2026-04-27 13:04:33.625 - MemoryMapDatasetBackingStore_4ec24521 - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 13:04:33.626 - MemoryMapDatasetBackingStore_4ec24521 - INFO - Index file created: /tmp/aiperf_mmap_bf089fe4-bdf4-4844-b416-805d15f68747/index.dat
+2026-04-27 13:04:33.627 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_bf089fe4-bdf4-4844-b416-805d15f68747/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_bf089fe4-bdf4-4844-b416-805d15f68747/index.dat') conversation_count=4 total_size_bytes=1525 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 13:04:33.627 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 13:04:33.627 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/qwen_qwen3.5-4b-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 13:04:33.630 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-04-27 13:04:33.656 - PhaseOrchestrator_afd9b989 - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 13:04:33.778 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 13:04:33.778 - dataset_manager - INFO - Dataset configured in 4.56 seconds
+2026-04-27 13:04:33.779 - system_controller - INFO - All services configured in 8.56 seconds
+2026-04-27 13:04:33.779 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 13:04:33.786 - system_controller - INFO - All services started profiling successfully
+2026-04-27 13:04:33.786 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 13:04:33.794 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 13:04:33.796 - PhaseRunner - NOTICE - Phase profiling started | target: 20 requests
+2026-04-27 13:04:33.806 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 13:05:04.278 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:05:35.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:06:01.957 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 47.28ms
+2026-04-27 13:06:06.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:06:37.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:07:08.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:07:39.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:08:10.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:08:41.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:09:12.284 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:09:43.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:09:51.835 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 35.36ms
+2026-04-27 13:10:01.871 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 28.85ms
+2026-04-27 13:10:11.956 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 59.08ms
+2026-04-27 13:10:14.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:10:45.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:11:16.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:11:47.292 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:12:01.831 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 31.63ms
+2026-04-27 13:12:18.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:12:49.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:13:20.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:13:21.703 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 44.47ms
+2026-04-27 13:13:41.783 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 52.30ms
+2026-04-27 13:13:51.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:14:01.840 - EventLoopMonitor - WARNING - Event loop for timing_manager is taking too long to run. Overhead: 31.15ms
+2026-04-27 13:14:22.277 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:14:22.279 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=20, completed=19, in_flight=1 | sessions: sent=20, completed=19
+2026-04-27 13:14:22.280 - records_manager - INFO - Sent 20 requests. Waiting for all to complete...
+2026-04-27 13:14:53.276 - AioHttpClient - ERROR - Error in aiohttp request: TimeoutError()
+2026-04-27 13:14:53.278 - PhaseRunner - NOTICE - Phase profiling complete | completed=20, cancelled=0, errors=0 | sessions: completed=20, cancelled=0 | elapsed=619.48s
+2026-04-27 13:14:53.279 - PhaseOrchestrator_afd9b989 - NOTICE - All credits completed
+2026-04-27 13:14:53.281 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 13:14:53.281 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777309473796533678, sent_end_ns=1777310062278981201, requests_end_ns=1777310093278651711, total_expected_requests=20, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=20, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=0, error_records=19)
+2026-04-27 13:14:53.281 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 19 of 20 records processed)...
+2026-04-27 13:14:53.281 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 13:14:53.283 - records_manager - INFO - Processed 0 valid requests and 20 errors (20 total).
+2026-04-27 13:14:53.284 - records_manager - INFO - Received all records, processing now...
+2026-04-27 13:14:53.292 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 13:14:55.278 - records_manager - INFO - Processing records results...
+2026-04-27 13:14:55.282 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 13:14:55.282 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 13:14:55.918 - ExporterManager - INFO - Exporting all records
+2026-04-27 13:14:56.030 - ExporterManager - INFO - Exporting console data
