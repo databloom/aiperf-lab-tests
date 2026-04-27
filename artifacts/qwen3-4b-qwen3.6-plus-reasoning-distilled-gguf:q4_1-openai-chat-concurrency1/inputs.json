@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "session_id": "19f80564-4c26-4d71-83be-e1aa50461c22",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Hello! Please respond with a short sentence."
+            }
+          ],
+          "model": "qwen3-4b-qwen3.6-plus-reasoning-distilled-gguf:q4_1",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "b555dfe8-7df2-4b2b-8865-7cbe9381a3a1",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "What is 2 + 2? Reply with one number only."
+            }
+          ],
+          "model": "qwen3-4b-qwen3.6-plus-reasoning-distilled-gguf:q4_1",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "cf35b096-3e58-4fcb-b2e0-2f334510cfb1",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Write a one-line haiku about GPUs."
+            }
+          ],
+          "model": "qwen3-4b-qwen3.6-plus-reasoning-distilled-gguf:q4_1",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "02eee3ee-6635-42dc-9fbe-1de599f7d4bc",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Return the single word: ready"
+            }
+          ],
+          "model": "qwen3-4b-qwen3.6-plus-reasoning-distilled-gguf:q4_1",
+          "stream": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+2026-04-27 12:22:11.098 - aiperf.cli_runner - INFO - Starting AIPerf System
+2026-04-27 12:22:11.707 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2 "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 12:22:11.762 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2 "HTTP/1.1 200 OK"
+2026-04-27 12:22:11.808 - aiperf.cli_runner - INFO - ✓ Tokenizer gpt2 detected
+2026-04-27 12:22:11.813 - aiperf.cli_runner - INFO - 1 tokenizer validated • 0.7s
+2026-04-27 12:22:12.202 - server_metrics_manager - INFO - Server Metrics: Discovered 2 endpoints: ['http://192.168.19.150:8080/metrics', 'http://192.168.19.9:8080/metrics']
+2026-04-27 12:22:12.216 - system_controller - INFO - Registered Worker Manager (id: 'worker_manager')
+2026-04-27 12:22:12.223 - system_controller - INFO - Registered Dataset Manager (id: 'dataset_manager')
+2026-04-27 12:22:12.300 - system_controller - INFO - Registered Gpu Telemetry Manager (id: 'gpu_telemetry_manager')
+2026-04-27 12:22:12.322 - system_controller - INFO - Registered Server Metrics Manager (id: 'server_metrics_manager')
+2026-04-27 12:22:12.299 - GPUTelemetryJSONLWriter_68fc290c - INFO - GPU telemetry export enabled: artifacts/llama-3.2-3b-instruct-gguf:q4_k_m-openai-chat-concurrency1/gpu_telemetry_export.jsonl
+2026-04-27 12:22:12.350 - RecordExportResultsProcessor_75b9aab7 - INFO - Record metrics export enabled: artifacts/llama-3.2-3b-instruct-gguf:q4_k_m-openai-chat-concurrency1/profile_export.jsonl
+2026-04-27 12:22:12.614 - system_controller - INFO - Registered Records Manager (id: 'records_manager')
+2026-04-27 12:22:12.657 - system_controller - INFO - Registered Record Processor (id: 'record_processor_71134548')
+2026-04-27 12:22:12.817 - system_controller - INFO - Registered Timing Manager (id: 'timing_manager')
+2026-04-27 12:22:12.978 - system_controller - INFO - Registered Worker (id: 'worker_d517a6c5')
+2026-04-27 12:22:13.018 - system_controller - INFO - AIPerf System is CONFIGURING
+2026-04-27 12:22:13.018 - system_controller - INFO - Configuring all services to start profiling
+2026-04-27 12:22:13.021 - InferenceResultParser_27c60d9f - INFO - Configuring tokenizers for inference result parser
+2026-04-27 12:22:13.026 - dataset_manager - INFO - Configuring tokenizer(s) for dataset manager
+2026-04-27 12:22:13.027 - timing_manager - INFO - Waiting for dataset to be configured before configuring timing
+2026-04-27 12:22:13.044 - system_controller - INFO - Server metrics disabled - no Prometheus endpoints reachable
+2026-04-27 12:22:13.051 - system_controller - INFO - GPU telemetry disabled - no DCGM endpoints reachable
+2026-04-27 12:22:15.113 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.119 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.155 - httpx - INFO - HTTP Request: GET https://huggingface.co/gpt2/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.209 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.252 - httpx - INFO - HTTP Request: GET https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.253 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-27 12:22:15.310 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 12:22:15.320 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.321 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-04-27 12:22:15.350 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:15.360 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 12:22:15.387 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 12:22:15.407 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:15.423 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.444 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-04-27 12:22:15.464 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/vocab.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.485 - httpx - INFO - HTTP Request: GET https://huggingface.co/api/models/openai-community/gpt2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.505 - httpx - INFO - HTTP Request: GET https://huggingface.co/gpt2/resolve/main/vocab.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.527 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/vocab.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.650 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/merges.txt "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.693 - httpx - INFO - HTTP Request: GET https://huggingface.co/gpt2/resolve/main/merges.txt "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.715 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/merges.txt "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.775 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:15.826 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:15.848 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:15.878 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:15.903 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.956 - httpx - INFO - HTTP Request: GET https://huggingface.co/gpt2/resolve/main/tokenizer.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:15.970 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/tokenizer.json "HTTP/1.1 200 OK"
+2026-04-27 12:22:16.107 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:16.159 - httpx - INFO - HTTP Request: HEAD https://huggingface.co/gpt2/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-04-27 12:22:16.701 - dataset_manager - INFO - Tokenizer(s) configured in 3.67 seconds
+2026-04-27 12:22:16.702 - dataset_manager - INFO - Configuring dataset for dataset_manager
+2026-04-27 12:22:16.896 - InferenceResultParser_27c60d9f - INFO - Initialized tokenizers: {'llama-3.2-3b-instruct-gguf:q4_k_m': {'class': 'GPT2Tokenizer', 'name_or_path': 'gpt2'}} in 3.87 seconds
+2026-04-27 12:22:21.344 - CustomDatasetComposer - INFO - Using preferred sampling strategy for single_turn: sequential
+2026-04-27 12:22:21.370 - MemoryMapDatasetBackingStore_15fed001 - INFO - Memory-mapped backing store initialized (streaming to /tmp/aiperf_mmap_178992f7-f95a-4410-9549-2be0097c5868/dataset.dat)
+2026-04-27 12:22:21.380 - MemoryMapDatasetBackingStore_15fed001 - INFO - Data file finalized: 4 conversations, 0.00 MB
+2026-04-27 12:22:21.382 - MemoryMapDatasetBackingStore_15fed001 - INFO - Index file created: /tmp/aiperf_mmap_178992f7-f95a-4410-9549-2be0097c5868/index.dat
+2026-04-27 12:22:21.383 - dataset_manager - INFO - Backing store finalized: client_type=DatasetClientStoreType.MEMORY_MAP data_file_path=PosixPath('/tmp/aiperf_mmap_178992f7-f95a-4410-9549-2be0097c5868/dataset.dat') index_file_path=PosixPath('/tmp/aiperf_mmap_178992f7-f95a-4410-9549-2be0097c5868/index.dat') conversation_count=4 total_size_bytes=1549 compressed_data_file_path=None compressed_index_file_path=None compressed_size_bytes=0
+2026-04-27 12:22:21.384 - dataset_manager - INFO - sampling strategy: sequential, unique conversations: 4, unique turn count: 4
+2026-04-27 12:22:21.386 - dataset_manager - INFO - Generating inputs.json file at /home/mike/performancetest/aiperf/artifacts/llama-3.2-3b-instruct-gguf:q4_k_m-openai-chat-concurrency1/inputs.json
+2026-04-27 12:22:21.392 - dataset_manager - INFO - inputs.json file generated in 0.00 seconds
+2026-04-27 12:22:21.422 - PhaseOrchestrator_0eea43dc - INFO - Initialized 1 phase(s): ['Profiling']
+2026-04-27 12:22:21.562 - dataset_manager - INFO - Dataset client initialized and freed 4 conversations from memory
+2026-04-27 12:22:21.562 - dataset_manager - INFO - Dataset configured in 4.86 seconds
+2026-04-27 12:22:21.564 - system_controller - INFO - All services configured in 8.55 seconds
+2026-04-27 12:22:21.564 - system_controller - INFO - AIPerf System is CONFIGURED
+2026-04-27 12:22:21.574 - system_controller - INFO - All services started profiling successfully
+2026-04-27 12:22:21.575 - system_controller - INFO - AIPerf System is PROFILING
+2026-04-27 12:22:21.579 - RateTiming - INFO - Creating interval generator: pattern=concurrency_burst, rate=None, smoothness=None
+2026-04-27 12:22:21.579 - PhaseRunner - NOTICE - Phase profiling started | target: 20 requests
+2026-04-27 12:22:21.580 - records_manager - INFO - Credit phase start: profiling
+2026-04-27 12:22:22.014 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:22.649 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:23.116 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:23.739 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:24.128 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:24.761 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:25.166 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:25.811 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:26.214 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:26.865 - PhaseRunner - NOTICE - Phase profiling sending complete | sent=20, completed=19, in_flight=1 | sessions: sent=20, completed=19
+2026-04-27 12:22:26.867 - records_manager - INFO - Sent 20 requests. Waiting for all to complete...
+2026-04-27 12:22:26.874 - AioHttpClient - ERROR - Error in aiohttp request: ClientConnectorError(ConnectionKey(host='192.168.19.9', port=8080, is_ssl=False, ssl=True, proxy=None, proxy_auth=None, proxy_headers_hash=None), ConnectionRefusedError(111, "Connect call failed ('192.168.19.9', 8080)"))
+2026-04-27 12:22:26.876 - PhaseRunner - NOTICE - Phase profiling complete | completed=20, cancelled=0, errors=0 | sessions: completed=20, cancelled=0 | elapsed=5.30s
+2026-04-27 12:22:26.878 - records_manager - INFO - Received CREDIT_PHASE_COMPLETE message, Phase complete: PhaseRecordsStats(phase=CreditPhase.PROFILING, start_ns=1777306941579408862, sent_end_ns=1777306946864987415, requests_end_ns=1777306946875744880, total_expected_requests=20, expected_duration_sec=None, expected_num_sessions=None, expected_grace_period_sec=None, final_requests_sent=None, final_requests_completed=20, final_requests_cancelled=0, final_request_errors=0, final_sent_sessions=None, final_completed_sessions=None, final_cancelled_sessions=None, timeout_triggered=False, grace_period_timeout_triggered=False, was_cancelled=False, records_end_ns=None, success_records=10, error_records=10)
+2026-04-27 12:22:26.878 - records_manager - NOTICE - All requests have completed, please wait for the results to be processed (currently 20 of 20 records processed)...
+2026-04-27 12:22:26.879 - records_manager - INFO - Processed 10 valid requests and 10 errors (20 total).
+2026-04-27 12:22:26.879 - records_manager - INFO - Received all records, processing now...
+2026-04-27 12:22:26.878 - PhaseOrchestrator_0eea43dc - NOTICE - All credits completed
+2026-04-27 12:22:26.884 - system_controller - INFO - Received credits complete from 'timing_manager'
+2026-04-27 12:22:26.886 - records_manager - INFO - All credits complete, please wait for the results to be processed...
+2026-04-27 12:22:26.897 - records_manager - INFO - Waiting 2.0s for server metrics flush period...
+2026-04-27 12:22:28.876 - records_manager - INFO - Processing records results...
+2026-04-27 12:22:28.894 - records_manager - INFO - _finalize_and_process_results completed
+2026-04-27 12:22:28.899 - system_controller - INFO - All results received, initiating shutdown
+2026-04-27 12:22:29.509 - ExporterManager - INFO - Exporting all records
+2026-04-27 12:22:29.574 - ExporterManager - INFO - Exporting console data

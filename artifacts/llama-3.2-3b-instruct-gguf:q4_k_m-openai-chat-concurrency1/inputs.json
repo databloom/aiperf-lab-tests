@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "session_id": "6112b84f-f3d1-44e5-814a-9500795d140b",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Hello! Please respond with a short sentence."
+            }
+          ],
+          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "821abb37-7055-4272-a0ee-46cc5710aa55",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "What is 2 + 2? Reply with one number only."
+            }
+          ],
+          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "4fefb17b-52ba-4923-bab0-d1bf9c370210",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Write a one-line haiku about GPUs."
+            }
+          ],
+          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "stream": true
+        }
+      ]
+    },
+    {
+      "session_id": "e8b94c92-172a-41f4-b8ff-c4b35e2ef2e5",
+      "payloads": [
+        {
+          "messages": [
+            {
+              "role": "user",
+              "content": "Return the single word: ready"
+            }
+          ],
+          "model": "llama-3.2-3b-instruct-gguf:q4_k_m",
+          "stream": true
+        }
+      ]
+    }
+  ]
+}
