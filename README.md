@@ -21,4 +21,5 @@ Latest single-host benchmark runs using `aiperf profile --request-count 20 --str
 - `artifacts/`: AIPerf exports (`profile_export_aiperf.csv`, `profile_export_aiperf.json`, logs)
 - `inputs.jsonl`: prompts used for custom single-turn dataset runs
 - `TESTING.md`: full reproduction commands, environment setup, and extended RAG testing notes
+- `RESULTS.md`: extracted benchmark performance metrics table with artifact pointers
 
